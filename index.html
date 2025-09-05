@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter - Convert Length, Weight, Temperature & More</title>
+    <meta name="description" content="Free online unit converter tool. Convert length, weight, temperature, volume, area, speed, and more. Fast, accurate, and easy to use.">
+    <meta name="keywords" content="unit converter, convert units, length converter, weight converter, temperature converter, metric conversion">
+    <meta name="author" content="Unit Converter Tool">
+    <link rel="canonical" href="https://yourname.github.io/unit-converter">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#5D5CDE">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Unit Converter">
+    <meta name="application-name" content="Unit Converter">
+    <meta name="msapplication-TileColor" content="#5D5CDE">
+    <meta name="msapplication-tap-highlight" content="no">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIlVuaXQgQ29udmVydGVyIC0gQWZyaWNhbiBDdXJyZW5jeSAmIE1vcmUiLAogICJzaG9ydF9uYW1lIjogIlVuaXQgQ29udmVydGVyIiwKICAiZGVzY3JpcHRpb24iOiAiQ29udmVydCB1bml0cyBhbmQgY3VycmVuY2llcyBpbnN0YW50bHkuIEluY2x1ZGVzIGFsbCBBZnJpY2FuIGN1cnJlbmNpZXMgYW5kIG1vcmUhIiwKICAic3RhcnRfdXJsIjogIi8iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNmOWZhZmIiLAogICJ0aGVtZV9jb2xvciI6ICIjNUQ1Q0RFIiwKICAib3JpZW50YXRpb24iOiAicG9ydHJhaXQtcHJpbWFyeSIsCiAgImljb25zIjogWwogICAgewogICAgICAic3JjIjogImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjNhV1IwYUQwaU1URXlJaUJvWldsbmFIUTlJakV5TWlJZ2RtbGxkMEp2ZUQwaU1DQXdJREV5TWlBeE1qSWlJSGh0Ykc1elBTSm9kSFJ3T2k4dmQzZDNMbmN6TG05eVp5OHlNREF3TDNOMlp5SStQRzl3WVc1NWFYUjVQU0l1TnlJK1BISmxZM1FnZUQwaU1TSWdlVDBpTVNJZ2QybGtkR2c5SWpFeU1DSWdhR1ZwWjJoMFBTSXhNakFpSUhKNFBTSXhNQ0lnWm1sc2JEMGlJelZFTlVORVJTSXZQanhqYVhKamJHVWdZM2c5SWpZeElpQmplVDBpTmpFaUlISXlQU0l5TlNJZ1ptbHNiRDBpSXpWRU5VTkVSU0l2UGp4MGFXMWxjeTVqYjIxd1lXTjBJRzl3WVdOcGRIazlJaTQxSWo0OGRHVjRkQ0I0UFNJME5pSWdlVDBpTmpZaUlHWnBiR3c5SW1kcGJtZGxjaUlnWm05dWRDMXphWHBsUFNJeU5HSWlJR1oxYm1OdGFXOXVQU0psWkM1bFl5ST5PdXM4TDNSbGVIUStQSFJsZUhRZ2VEMGlOallpSUhrOUlqazBJaUJtYVd4c1BTSmNNekF3UXlJZ1ptOXVkQzF6YVhwbFBTSXhPQ0lnWm05dWRDMTNaV2xuYUhRdElHSnZiR1FpUGtwQlNqd3ZkR1Y0ZEQ0OEwzQnZZVzQ0WVM0K1BDOXpkbWMrIiwKICAgICAgInNpemVzIjogIjEyOHgxMjgiLAogICAgICAidHlwZSI6ICJpbWFnZS9zdmcreG1sIgogICAgfSwKICAgIHsKICAgICAgInNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUIzYVdSMGFEMGlORGd4SWlCb1pXbG5hSFE5SWpRNE1TSWdkbWxsZDBKdmVEMGlNQ0F3SURRNE1TQTBPREVpSUhoMGJHNXpQU0pvZEhSd09pOHZkM2QzTG5jekxtOXlaeTh5TURBd0wzTjJaeUkrUEdGd1lXNTViV2x6YVQ0OGNtVmpkQ0I0UFNJeElpQjVQU0l4SWlCM2FXUjBhRDBpTkRnNUlpQm9aV2xuYUhROUlqUTNPU0lnY25nOUlqRXdJaUJtYVd4c1BTSWpOVVExUTBSRklpOCtQQzl6ZG1jKyIsCiAgICAgICJzaXplcyI6ICI0ODF4NDgxIiwKICAgICAgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIKICAgIH0KICBdLAogICJjYXRlZ29yaWVzIjogWyJ1dGlsaXRpZXMiLCAicHJvZHVjdGl2aXR5IiwgInRvb2xzIl0sCiAgImxhbmciOiAiZW4iCn0=">
+    
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="Free Unit Converter Tool">
+    <meta property="og:description" content="Convert between different units of measurement instantly. Length, weight, temperature, volume and more.">
+    <meta property="og:type" content="website">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D5CDE',
+                        secondary: '#10B981'
+                    }
+                }
+            },
+            darkMode: 'class'
+        }
+    </script>
+    
+    <style>
+        .converter-card {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .converter-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-color: #5D5CDE;
+        }
+        .result-highlight {
+            animation: highlightResult 0.5s ease;
+        }
+        @keyframes highlightResult {
+            0% { background-color: #5D5CDE; color: white; }
+            100% { background-color: transparent; color: inherit; }
+        }
+        .ad-space {
+            min-height: 90px;
+            border: 2px dashed #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9ca3af;
+            font-size: 0.875rem;
+        }
+        .dark .ad-space {
+            border-color: #4b5563;
+            color: #6b7280;
+        }
+        
+        /* Category Animation Styles */
+        .category-btn {
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slideInUp 0.6s ease-out forwards;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .category-btn:nth-child(1) { animation-delay: 0.1s; }
+        .category-btn:nth-child(2) { animation-delay: 0.2s; }
+        .category-btn:nth-child(3) { animation-delay: 0.3s; }
+        .category-btn:nth-child(4) { animation-delay: 0.4s; }
+        .category-btn:nth-child(5) { animation-delay: 0.5s; }
+        .category-btn:nth-child(6) { animation-delay: 0.6s; }
+        .category-btn:nth-child(7) { animation-delay: 0.7s; }
+        .category-btn:nth-child(8) { animation-delay: 0.8s; }
+        .category-btn:nth-child(9) { animation-delay: 0.9s; }
+        
+        @keyframes slideInUp {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        .category-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .category-btn:hover::before {
+            left: 100%;
+        }
+        
+        .category-btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(93, 92, 222, 0.3);
+        }
+        
+        .category-btn.active {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(93, 92, 222, 0.4);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 8px 25px rgba(93, 92, 222, 0.4); }
+            50% { box-shadow: 0 12px 35px rgba(93, 92, 222, 0.6); }
+        }
+        
+        /* Icon bounce animation */
+        .category-btn:hover .category-icon {
+            animation: bounce 0.6s ease-in-out;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 60%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-8px); }
+            80% { transform: translateY(-4px); }
+        }
+        
+        /* Category section entrance */
+        .category-section {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease-out 0.2s forwards;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Converter interface animation */
+        .converter-interface {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease-out 0.4s forwards;
+        }
+        
+        /* Popular conversions animation */
+        .popular-item {
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: slideInLeft 0.5s ease-out forwards;
+            transition: all 0.3s ease;
+        }
+        
+        .popular-item:nth-child(odd) { animation-delay: 0.1s; }
+        .popular-item:nth-child(even) { animation-delay: 0.2s; }
+        
+        @keyframes slideInLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .popular-item:hover {
+            transform: translateX(5px) scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 min-h-screen transition-colors duration-300">
+    
+    <!-- Header Ad Space -->
+    <div class="bg-white dark:bg-gray-800 shadow-sm">
+        <div class="container mx-auto px-4 py-2">
+            <div class="ad-space rounded">
+                Header Advertisement Space (728x90)
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-8 max-w-7xl">
+        
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
+                Unit Converter
+            </h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                Convert between different units of measurement instantly. Fast, accurate, and completely free to use.
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            
+            <!-- Main Content -->
+            <div class="lg:col-span-3">
+                
+                <!-- Category Selection -->
+                <div class="category-section bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
+                    <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Select Conversion Category</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <button class="category-btn active" data-category="length">
+                            <span class="category-icon">📏</span> Length
+                        </button>
+                        <button class="category-btn" data-category="weight">
+                            <span class="category-icon">⚖️</span> Weight
+                        </button>
+                        <button class="category-btn" data-category="temperature">
+                            <span class="category-icon">🌡️</span> Temperature
+                        </button>
+                        <button class="category-btn" data-category="volume">
+                            <span class="category-icon">🥤</span> Volume
+                        </button>
+                        <button class="category-btn" data-category="area">
+                            <span class="category-icon">📐</span> Area
+                        </button>
+                        <button class="category-btn" data-category="speed">
+                            <span class="category-icon">🚗</span> Speed
+                        </button>
+                        <button class="category-btn" data-category="time">
+                            <span class="category-icon">⏰</span> Time
+                        </button>
+                        <button class="category-btn" data-category="energy">
+                            <span class="category-icon">⚡</span> Energy
+                        </button>
+                        <button class="category-btn" data-category="currency">
+                            <span class="category-icon">💱</span> Currency
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Converter Interface -->
+                <div class="converter-interface bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        
+                        <!-- From Unit -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">From:</label>
+                            <select id="fromUnit" class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:border-primary focus:outline-none bg-white dark:bg-gray-700 text-gray-800 dark:text-white mb-3">
+                                <!-- Options populated by JavaScript -->
+                            </select>
+                            <input type="number" id="fromValue" placeholder="Enter value" step="any"
+                                class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:border-primary focus:outline-none bg-white dark:bg-gray-700 text-gray-800 dark:text-white">
+                        </div>
+
+                        <!-- To Unit -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">To:</label>
+                            <select id="toUnit" class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:border-primary focus:outline-none bg-white dark:bg-gray-700 text-gray-800 dark:text-white mb-3">
+                                <!-- Options populated by JavaScript -->
+                            </select>
+                            <div id="result" class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-600 text-gray-800 dark:text-white font-semibold">
+                                Result will appear here
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Currency Status & Quick Convert Buttons -->
+                    <div class="mt-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-sm font-medium text-gray-700 dark:text-gray-300">Quick Convert:</h3>
+                            <div id="currencyStatus" class="hidden text-xs text-gray-500 dark:text-gray-400">
+                                <span id="lastUpdated"></span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2" id="quickButtons">
+                            <!-- Populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ad Space Between Content -->
+                <div class="mb-8">
+                    <div class="ad-space rounded-lg">
+                        Content Advertisement Space (728x90)
+                    </div>
+                </div>
+
+                <!-- Popular Conversions -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
+                    <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Popular Conversions</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="popularConversions">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- SEO Content -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">About Our Unit Converter</h2>
+                    <div class="prose dark:prose-invert max-w-none">
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">
+                            Our free online unit converter makes it easy to convert between different units of measurement. Whether you need to convert length, weight, temperature, volume, area, speed, time, energy units, or live currency exchange rates, our tool provides instant and accurate results.
+                        </p>
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-2">Features:</h3>
+                        <ul class="text-gray-600 dark:text-gray-400 mb-4">
+                            <li>• Instant conversion results as you type</li>
+                            <li>• Support for metric and imperial units</li>
+                            <li>• Mobile-friendly responsive design</li>
+                            <li>• No registration required</li>
+                            <li>• Completely free to use</li>
+                        </ul>
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-2">Supported Categories:</h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            Length (meters, feet, inches), Weight (kilograms, pounds, ounces), Temperature (Celsius, Fahrenheit, Kelvin), Volume (liters, gallons, cups), Area (square meters, acres, hectares), Speed (mph, km/h, m/s), Time (seconds, minutes, hours), Energy (joules, calories, BTU), and live Currency exchange rates (USD, EUR, GBP, JPY and 16 more currencies).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="lg:col-span-1">
+                
+                <!-- Sidebar Ad -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 mb-6">
+                    <div class="ad-space rounded min-h-[600px]">
+                        Sidebar Advertisement<br>Space (300x600)
+                    </div>
+                </div>
+
+                <!-- Conversion History -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 mb-6">
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4">Recent Conversions</h3>
+                    <div id="conversionHistory" class="space-y-2">
+                        <p class="text-gray-500 dark:text-gray-400 text-sm">No conversions yet</p>
+                    </div>
+                </div>
+
+                <!-- Quick Reference -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4">Quick Reference</h3>
+                    <div class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                        <div>1 meter = 3.28084 feet</div>
+                        <div>1 kilogram = 2.20462 pounds</div>
+                        <div>0°C = 32°F = 273.15K</div>
+                        <div>1 liter = 0.264172 gallons</div>
+                        <div>1 mile = 1.60934 kilometers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Ad -->
+    <footer class="bg-white dark:bg-gray-800 mt-12 py-6">
+        <div class="container mx-auto px-4">
+            <div class="ad-space rounded mb-4">
+                Footer Advertisement Space (728x90)
+            </div>
+            <div class="text-center text-gray-600 dark:text-gray-400 text-sm">
+                © 2024 Unit Converter Tool. Free online unit conversion calculator.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark mode detection
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
+
+        // Currency exchange rates storage
+        let exchangeRates = {};
+        let lastUpdateTime = null;
+        const CACHE_DURATION = 1000 * 60 * 60; // 1 hour cache
+
+        // Conversion data
+        const conversions = {
+            length: {
+                name: 'Length',
+                units: {
+                    'meter': { name: 'Meters', factor: 1 },
+                    'kilometer': { name: 'Kilometers', factor: 1000 },
+                    'centimeter': { name: 'Centimeters', factor: 0.01 },
+                    'millimeter': { name: 'Millimeters', factor: 0.001 },
+                    'inch': { name: 'Inches', factor: 0.0254 },
+                    'foot': { name: 'Feet', factor: 0.3048 },
+                    'yard': { name: 'Yards', factor: 0.9144 },
+                    'mile': { name: 'Miles', factor: 1609.344 }
+                },
+                popular: ['meter to feet', 'feet to meter', 'inch to cm', 'cm to inch', 'mile to km', 'km to mile']
+            },
+            weight: {
+                name: 'Weight',
+                units: {
+                    'kilogram': { name: 'Kilograms', factor: 1 },
+                    'gram': { name: 'Grams', factor: 0.001 },
+                    'pound': { name: 'Pounds', factor: 0.453592 },
+                    'ounce': { name: 'Ounces', factor: 0.0283495 },
+                    'ton': { name: 'Tons (Metric)', factor: 1000 },
+                    'stone': { name: 'Stones', factor: 6.35029 }
+                },
+                popular: ['kg to lbs', 'lbs to kg', 'gram to ounce', 'ounce to gram']
+            },
+            temperature: {
+                name: 'Temperature',
+                units: {
+                    'celsius': { name: 'Celsius (°C)' },
+                    'fahrenheit': { name: 'Fahrenheit (°F)' },
+                    'kelvin': { name: 'Kelvin (K)' }
+                },
+                popular: ['celsius to fahrenheit', 'fahrenheit to celsius']
+            },
+            volume: {
+                name: 'Volume',
+                units: {
+                    'liter': { name: 'Liters', factor: 1 },
+                    'milliliter': { name: 'Milliliters', factor: 0.001 },
+                    'gallon_us': { name: 'Gallons (US)', factor: 3.78541 },
+                    'gallon_uk': { name: 'Gallons (UK)', factor: 4.54609 },
+                    'cup': { name: 'Cups (US)', factor: 0.236588 },
+                    'pint': { name: 'Pints (US)', factor: 0.473176 },
+                    'quart': { name: 'Quarts (US)', factor: 0.946353 }
+                },
+                popular: ['liter to gallon', 'gallon to liter', 'ml to cup', 'cup to ml']
+            },
+            area: {
+                name: 'Area',
+                units: {
+                    'square_meter': { name: 'Square Meters', factor: 1 },
+                    'square_kilometer': { name: 'Square Kilometers', factor: 1000000 },
+                    'square_centimeter': { name: 'Square Centimeters', factor: 0.0001 },
+                    'square_foot': { name: 'Square Feet', factor: 0.092903 },
+                    'square_inch': { name: 'Square Inches', factor: 0.00064516 },
+                    'acre': { name: 'Acres', factor: 4046.86 },
+                    'hectare': { name: 'Hectares', factor: 10000 }
+                },
+                popular: ['sq meter to sq feet', 'sq feet to sq meter', 'acre to hectare']
+            },
+            speed: {
+                name: 'Speed',
+                units: {
+                    'meter_per_second': { name: 'Meters/Second', factor: 1 },
+                    'kilometer_per_hour': { name: 'Kilometers/Hour', factor: 0.277778 },
+                    'mile_per_hour': { name: 'Miles/Hour', factor: 0.44704 },
+                    'foot_per_second': { name: 'Feet/Second', factor: 0.3048 },
+                    'knot': { name: 'Knots', factor: 0.514444 }
+                },
+                popular: ['mph to kmh', 'kmh to mph', 'mps to kmh']
+            },
+            time: {
+                name: 'Time',
+                units: {
+                    'second': { name: 'Seconds', factor: 1 },
+                    'minute': { name: 'Minutes', factor: 60 },
+                    'hour': { name: 'Hours', factor: 3600 },
+                    'day': { name: 'Days', factor: 86400 },
+                    'week': { name: 'Weeks', factor: 604800 },
+                    'month': { name: 'Months', factor: 2629746 },
+                    'year': { name: 'Years', factor: 31556952 }
+                },
+                popular: ['hour to minute', 'day to hour', 'week to day']
+            },
+            energy: {
+                name: 'Energy',
+                units: {
+                    'joule': { name: 'Joules', factor: 1 },
+                    'kilojoule': { name: 'Kilojoules', factor: 1000 },
+                    'calorie': { name: 'Calories', factor: 4.184 },
+                    'kilocalorie': { name: 'Kilocalories', factor: 4184 },
+                    'btu': { name: 'BTU', factor: 1055.06 },
+                    'watt_hour': { name: 'Watt Hours', factor: 3600 }
+                },
+                popular: ['joule to calorie', 'calorie to joule', 'kwh to joule']
+            },
+            currency: {
+                name: 'Currency',
+                units: {
+                    'USD': { name: 'US Dollar (USD)', symbol: '$' },
+                    'EUR': { name: 'Euro (EUR)', symbol: '€' },
+                    'GBP': { name: 'British Pound (GBP)', symbol: '£' },
+                    'JPY': { name: 'Japanese Yen (JPY)', symbol: '¥' },
+                    'CAD': { name: 'Canadian Dollar (CAD)', symbol: 'C$' },
+                    'AUD': { name: 'Australian Dollar (AUD)', symbol: 'A$' },
+                    'CHF': { name: 'Swiss Franc (CHF)', symbol: '₣' },
+                    'CNY': { name: 'Chinese Yuan (CNY)', symbol: '¥' },
+                    'INR': { name: 'Indian Rupee (INR)', symbol: '₹' },
+                    'KRW': { name: 'South Korean Won (KRW)', symbol: '₩' },
+                    'BRL': { name: 'Brazilian Real (BRL)', symbol: 'R$' },
+                    'RUB': { name: 'Russian Ruble (RUB)', symbol: '₽' },
+                    'MXN': { name: 'Mexican Peso (MXN)', symbol: '$' },
+                    'SGD': { name: 'Singapore Dollar (SGD)', symbol: 'S$' },
+                    'NZD': { name: 'New Zealand Dollar (NZD)', symbol: 'NZ$' },
+                    'HKD': { name: 'Hong Kong Dollar (HKD)', symbol: 'HK$' },
+                    'NOK': { name: 'Norwegian Krone (NOK)', symbol: 'kr' },
+                    'SEK': { name: 'Swedish Krona (SEK)', symbol: 'kr' },
+                    'TRY': { name: 'Turkish Lira (TRY)', symbol: '₺' },
+                    'ZAR': { name: 'South African Rand (ZAR)', symbol: 'R' },
+                    'GHS': { name: 'Ghana Cedi (GHS)', symbol: '₵' },
+                    'XOF': { name: 'West African CFA Franc (XOF)', symbol: 'CFA' },
+                    'XAF': { name: 'Central African CFA Franc (XAF)', symbol: 'FCFA' },
+                    'NGN': { name: 'Nigerian Naira (NGN)', symbol: '₦' },
+                    'KES': { name: 'Kenyan Shilling (KES)', symbol: 'KSh' },
+                    'EGP': { name: 'Egyptian Pound (EGP)', symbol: '£' },
+                    'MAD': { name: 'Moroccan Dirham (MAD)', symbol: 'DH' },
+                    'TND': { name: 'Tunisian Dinar (TND)', symbol: 'د.ت' },
+                    'ETB': { name: 'Ethiopian Birr (ETB)', symbol: 'Br' },
+                    'UGX': { name: 'Ugandan Shilling (UGX)', symbol: 'USh' },
+                    'TZS': { name: 'Tanzanian Shilling (TZS)', symbol: 'TSh' },
+                    'RWF': { name: 'Rwandan Franc (RWF)', symbol: 'RF' },
+                    'BWP': { name: 'Botswana Pula (BWP)', symbol: 'P' },
+                    'LSL': { name: 'Lesotho Loti (LSL)', symbol: 'L' },
+                    'SZL': { name: 'Swazi Lilangeni (SZL)', symbol: 'E' },
+                    'NAD': { name: 'Namibian Dollar (NAD)', symbol: 'N$' },
+                    'MZN': { name: 'Mozambican Metical (MZN)', symbol: 'MT' },
+                    'AOA': { name: 'Angolan Kwanza (AOA)', symbol: 'Kz' },
+                    'ZMW': { name: 'Zambian Kwacha (ZMW)', symbol: 'ZK' },
+                    'MWK': { name: 'Malawian Kwacha (MWK)', symbol: 'MK' },
+                    'GMD': { name: 'Gambian Dalasi (GMD)', symbol: 'D' },
+                    'GNF': { name: 'Guinean Franc (GNF)', symbol: 'FG' },
+                    'LRD': { name: 'Liberian Dollar (LRD)', symbol: 'L$' },
+                    'SLL': { name: 'Sierra Leonean Leone (SLL)', symbol: 'Le' },
+                    'CVE': { name: 'Cape Verdean Escudo (CVE)', symbol: '$' },
+                    'STN': { name: 'São Tomé Dobra (STN)', symbol: 'Db' },
+                    'DZD': { name: 'Algerian Dinar (DZD)', symbol: 'دج' },
+                    'LYD': { name: 'Libyan Dinar (LYD)', symbol: 'ل.د' },
+                    'SDG': { name: 'Sudanese Pound (SDG)', symbol: '£' },
+                    'SOS': { name: 'Somali Shilling (SOS)', symbol: 'S' },
+                    'DJF': { name: 'Djiboutian Franc (DJF)', symbol: 'Fdj' },
+                    'ERN': { name: 'Eritrean Nakfa (ERN)', symbol: 'Nfk' },
+                    'SCR': { name: 'Seychellois Rupee (SCR)', symbol: '₨' },
+                    'MUR': { name: 'Mauritian Rupee (MUR)', symbol: '₨' },
+                    'MGA': { name: 'Malagasy Ariary (MGA)', symbol: 'Ar' },
+                    'KMF': { name: 'Comorian Franc (KMF)', symbol: 'CF' }
+                },
+                popular: ['USD to GHS', 'GHS to USD', 'USD to EUR', 'EUR to USD', 'GBP to GHS', 'USD to NGN', 'GHS to GBP', 'EUR to GHS', 'USD to XOF', 'NGN to USD']
+            }
+        };
+
+        let currentCategory = 'length';
+        let conversionHistory = [];
+
+        // DOM elements
+        const fromUnit = document.getElementById('fromUnit');
+        const toUnit = document.getElementById('toUnit');
+        const fromValue = document.getElementById('fromValue');
+        const result = document.getElementById('result');
+
+        // Initialize
+        function init() {
+            updateCategory('length');
+            setupEventListeners();
+            updatePopularConversions();
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // Category buttons
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    updateCategory(btn.dataset.category);
+                });
+            });
+
+            // Input changes
+            fromValue.addEventListener('input', convert);
+            fromUnit.addEventListener('change', convert);
+            toUnit.addEventListener('change', convert);
+        }
+
+        // Update category
+        function updateCategory(category) {
+            currentCategory = category;
+            
+            // Update active button
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                if (btn.dataset.category === category) {
+                    btn.classList.add('active', 'bg-primary', 'text-white');
+                    btn.classList.remove('bg-gray-100', 'hover:bg-gray-200', 'text-gray-700');
+                } else {
+                    btn.classList.remove('active', 'bg-primary', 'text-white');
+                    btn.classList.add('bg-gray-100', 'hover:bg-gray-200', 'text-gray-700', 'dark:bg-gray-700', 'dark:text-gray-300', 'dark:hover:bg-gray-600');
+                }
+            });
+
+            // Update unit options
+            updateUnitOptions();
+            convert();
+            updateQuickButtons();
+        }
+
+        // Update unit options
+        function updateUnitOptions() {
+            const categoryData = conversions[currentCategory];
+            const units = Object.entries(categoryData.units);
+
+            fromUnit.innerHTML = '';
+            toUnit.innerHTML = '';
+
+            units.forEach(([key, unit]) => {
+                const option1 = new Option(unit.name, key);
+                const option2 = new Option(unit.name, key);
+                fromUnit.add(option1);
+                toUnit.add(option2);
+            });
+
+            // Set default selections
+            if (units.length > 1) {
+                toUnit.selectedIndex = 1;
+            }
+        }
+
+        // Convert function
+        async function convert() {
+            const inputValue = parseFloat(fromValue.value);
+            if (isNaN(inputValue)) {
+                result.textContent = 'Enter a number';
+                return;
+            }
+
+            const fromUnitKey = fromUnit.value;
+            const toUnitKey = toUnit.value;
+            
+            let convertedValue;
+
+            if (currentCategory === 'currency') {
+                convertedValue = await convertCurrency(inputValue, fromUnitKey, toUnitKey);
+                if (convertedValue === null) {
+                    result.textContent = 'Unable to fetch rates';
+                    return;
+                }
+            } else if (currentCategory === 'temperature') {
+                convertedValue = convertTemperature(inputValue, fromUnitKey, toUnitKey);
+            } else {
+                const categoryData = conversions[currentCategory];
+                const fromFactor = categoryData.units[fromUnitKey].factor;
+                const toFactor = categoryData.units[toUnitKey].factor;
+                convertedValue = (inputValue * fromFactor) / toFactor;
+            }
+
+            // Format result with currency symbol if applicable
+            let formattedResult;
+            if (currentCategory === 'currency') {
+                const symbol = conversions.currency.units[toUnitKey].symbol;
+                formattedResult = `${symbol}${formatCurrency(convertedValue)}`;
+            } else {
+                formattedResult = formatNumber(convertedValue);
+            }
+            
+            result.textContent = formattedResult;
+            result.classList.add('result-highlight');
+            setTimeout(() => result.classList.remove('result-highlight'), 500);
+
+            // Add to history
+            addToHistory(inputValue, fromUnitKey, convertedValue, toUnitKey);
+        }
+
+        // Temperature conversion
+        function convertTemperature(value, from, to) {
+            // Convert to Celsius first
+            let celsius;
+            switch(from) {
+                case 'celsius': celsius = value; break;
+                case 'fahrenheit': celsius = (value - 32) * 5/9; break;
+                case 'kelvin': celsius = value - 273.15; break;
+            }
+
+            // Convert from Celsius to target
+            switch(to) {
+                case 'celsius': return celsius;
+                case 'fahrenheit': return celsius * 9/5 + 32;
+                case 'kelvin': return celsius + 273.15;
+            }
+        }
+
+        // Fetch exchange rates
+        async function fetchExchangeRates() {
+            const now = Date.now();
+            
+            // Check if we have cached rates that are still valid
+            if (exchangeRates.USD && lastUpdateTime && (now - lastUpdateTime) < CACHE_DURATION) {
+                return exchangeRates;
+            }
+
+            try {
+                // Using ExchangeRate-API (free tier: 1500 requests/month)
+                const response = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
+                if (!response.ok) throw new Error('API request failed');
+                
+                const data = await response.json();
+                exchangeRates = data.rates;
+                exchangeRates.USD = 1; // Add USD as base
+                lastUpdateTime = now;
+                
+                return exchangeRates;
+            } catch (error) {
+                console.error('Failed to fetch exchange rates:', error);
+                
+                // Fallback to cached rates if available
+                if (exchangeRates.USD) {
+                    return exchangeRates;
+                }
+                
+                // Last resort: static fallback rates
+                return {
+                    USD: 1, EUR: 0.85, GBP: 0.73, JPY: 110, CAD: 1.25,
+                    AUD: 1.35, CHF: 0.92, CNY: 6.45, INR: 74, KRW: 1180,
+                    BRL: 5.2, RUB: 74, MXN: 20, SGD: 1.35, NZD: 1.42,
+                    HKD: 7.8, NOK: 8.5, SEK: 8.8, TRY: 8.5, ZAR: 14.5,
+                    // African currencies
+                    GHS: 12.1, XOF: 590, XAF: 590, NGN: 460, KES: 129,
+                    EGP: 31, MAD: 9.8, TND: 3.1, ETB: 55, UGX: 3700,
+                    TZS: 2300, RWF: 1050, BWP: 12.8, LSL: 14.5, SZL: 14.5,
+                    NAD: 14.5, MZN: 64, AOA: 830, ZMW: 18, MWK: 1030,
+                    GMD: 53, GNF: 8600, LRD: 155, SLL: 11300, CVE: 98,
+                    STN: 22, DZD: 135, LYD: 4.8, SDG: 450, SOS: 570,
+                    DJF: 178, ERN: 15, SCR: 13.2, MUR: 44, MGA: 4500, KMF: 440
+                };
+            }
+        }
+
+        // Convert currency
+        async function convertCurrency(amount, fromCurrency, toCurrency) {
+            if (fromCurrency === toCurrency) return amount;
+            
+            try {
+                const rates = await fetchExchangeRates();
+                
+                if (!rates[fromCurrency] || !rates[toCurrency]) {
+                    console.error('Currency not found in rates');
+                    return null;
+                }
+
+                // Convert through USD as base
+                const usdAmount = amount / rates[fromCurrency];
+                const convertedAmount = usdAmount * rates[toCurrency];
+                
+                return convertedAmount;
+            } catch (error) {
+                console.error('Currency conversion failed:', error);
+                return null;
+            }
+        }
+
+        // Format currency
+        function formatCurrency(num) {
+            if (num >= 1000000) {
+                return (num / 1000000).toFixed(2) + 'M';
+            }
+            if (num >= 1000) {
+                return (num / 1000).toFixed(2) + 'K';
+            }
+            if (num >= 100) {
+                return num.toFixed(2);
+            }
+            if (num >= 1) {
+                return num.toFixed(4);
+            }
+            return num.toFixed(6);
+        }
+
+        // Format number
+        function formatNumber(num) {
+            if (Math.abs(num) >= 1000000) {
+                return num.toExponential(4);
+            }
+            if (Math.abs(num) < 0.001 && num !== 0) {
+                return num.toExponential(4);
+            }
+            return parseFloat(num.toFixed(8)).toString();
+        }
+
+        // Add to history
+        function addToHistory(fromVal, fromUnit, toVal, toUnit) {
+            const categoryData = conversions[currentCategory];
+            const fromUnitName = categoryData.units[fromUnit].name;
+            const toUnitName = categoryData.units[toUnit].name;
+            
+            const historyItem = {
+                from: `${fromVal} ${fromUnitName}`,
+                to: `${formatNumber(toVal)} ${toUnitName}`,
+                timestamp: new Date()
+            };
+
+            conversionHistory.unshift(historyItem);
+            if (conversionHistory.length > 5) conversionHistory.pop();
+            
+            updateHistoryDisplay();
+        }
+
+        // Update history display
+        function updateHistoryDisplay() {
+            const historyContainer = document.getElementById('conversionHistory');
+            if (conversionHistory.length === 0) {
+                historyContainer.innerHTML = '<p class="text-gray-500 dark:text-gray-400 text-sm">No conversions yet</p>';
+                return;
+            }
+
+            historyContainer.innerHTML = conversionHistory.map(item => `
+                <div class="text-sm p-2 bg-gray-50 dark:bg-gray-700 rounded">
+                    <div class="font-medium text-gray-800 dark:text-white">${item.from}</div>
+                    <div class="text-gray-600 dark:text-gray-400">= ${item.to}</div>
+                </div>
+            `).join('');
+        }
+
+        // Update quick buttons
+        function updateQuickButtons() {
+            const quickButtonsContainer = document.getElementById('quickButtons');
+            const currencyStatus = document.getElementById('currencyStatus');
+            
+            if (currentCategory === 'currency') {
+                // Show currency-specific quick values
+                const commonValues = [1, 10, 100, 500, 1000];
+                quickButtonsContainer.innerHTML = commonValues.map(val => `
+                    <button class="px-3 py-1 text-sm bg-green-100 hover:bg-green-200 dark:bg-green-800 dark:hover:bg-green-700 text-green-700 dark:text-green-300 rounded transition-colors" onclick="quickConvert(${val})">
+                        ${val}
+                    </button>
+                `).join('');
+                
+                // Show currency status
+                currencyStatus.classList.remove('hidden');
+                updateCurrencyStatus();
+            } else {
+                // Show general quick values
+                const commonValues = [1, 10, 100, 1000];
+                quickButtonsContainer.innerHTML = commonValues.map(val => `
+                    <button class="px-3 py-1 text-sm bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded transition-colors" onclick="quickConvert(${val})">
+                        ${val}
+                    </button>
+                `).join('');
+                
+                // Hide currency status
+                currencyStatus.classList.add('hidden');
+            }
+        }
+
+        // Update currency status
+        function updateCurrencyStatus() {
+            const lastUpdatedElement = document.getElementById('lastUpdated');
+            if (lastUpdateTime) {
+                const timeAgo = Math.floor((Date.now() - lastUpdateTime) / (1000 * 60));
+                if (timeAgo < 1) {
+                    lastUpdatedElement.textContent = 'Rates updated: Just now';
+                } else if (timeAgo < 60) {
+                    lastUpdatedElement.textContent = `Rates updated: ${timeAgo}m ago`;
+                } else {
+                    const hoursAgo = Math.floor(timeAgo / 60);
+                    lastUpdatedElement.textContent = `Rates updated: ${hoursAgo}h ago`;
+                }
+            } else {
+                lastUpdatedElement.textContent = 'Loading rates...';
+            }
+        }
+
+        // Quick convert
+        function quickConvert(value) {
+            fromValue.value = value;
+            convert();
+        }
+
+        // Update popular conversions
+        function updatePopularConversions() {
+            const popularContainer = document.getElementById('popularConversions');
+            const allPopular = Object.values(conversions).flatMap(cat => 
+                cat.popular.map(conv => ({ category: cat.name, conversion: conv }))
+            );
+
+            popularContainer.innerHTML = allPopular.slice(0, 8).map((item, index) => `
+                <div class="popular-item p-3 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors cursor-pointer">
+                    <div class="font-medium text-gray-800 dark:text-white text-sm">${item.conversion}</div>
+                    <div class="text-xs text-gray-500 dark:text-gray-400">${item.category}</div>
+                </div>
+            `).join('');
+        }
+
+        // Add category button styles
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.className = 'category-btn px-4 py-2 rounded-lg font-medium transition-colors text-sm bg-gray-100 hover:bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600';
+        });
+
+        // PWA Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', async () => {
+                try {
+                    // Register service worker
+                    const registration = await navigator.serviceWorker.register(
+                        'data:text/javascript;base64,' + btoa(`
+                            const CACHE_NAME = 'unit-converter-v1';
+                            const urlsToCache = [
+                                '/',
+                                'https://cdn.tailwindcss.com/3.3.0'
+                            ];
+
+                            self.addEventListener('install', event => {
+                                event.waitUntil(
+                                    caches.open(CACHE_NAME)
+                                        .then(cache => cache.addAll(urlsToCache))
+                                );
+                            });
+
+                            self.addEventListener('fetch', event => {
+                                event.respondWith(
+                                    caches.match(event.request)
+                                        .then(response => {
+                                            if (response) {
+                                                return response;
+                                            }
+                                            return fetch(event.request);
+                                        })
+                                );
+                            });
+                        `)
+                    );
+                    console.log('ServiceWorker registration successful');
+                } catch (error) {
+                    console.log('ServiceWorker registration failed: ', error);
+                }
+            });
+        }
+
+        // PWA Install Prompt
+        let deferredPrompt;
+        let installPromptShown = false;
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            
+            // Show install prompt after user has used the app for a bit
+            setTimeout(() => {
+                if (!installPromptShown) {
+                    showInstallPrompt();
+                }
+            }, 30000); // Show after 30 seconds
+        });
+
+        function showInstallPrompt() {
+            if (!deferredPrompt || installPromptShown) return;
+            
+            installPromptShown = true;
+            
+            // Create custom install prompt
+            const installBanner = document.createElement('div');
+            installBanner.className = 'fixed bottom-4 left-4 right-4 bg-primary text-white p-4 rounded-lg shadow-lg z-50 flex items-center justify-between';
+            installBanner.innerHTML = `
+                <div class="flex items-center">
+                    <div class="text-2xl mr-3">📱</div>
+                    <div>
+                        <div class="font-semibold">Install Unit Converter</div>
+                        <div class="text-sm opacity-90">Add to your home screen for quick access</div>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <button id="installNow" class="bg-white text-primary px-3 py-1 rounded font-medium text-sm">Install</button>
+                    <button id="installLater" class="border border-white text-white px-3 py-1 rounded text-sm">Later</button>
+                </div>
+            `;
+            
+            document.body.appendChild(installBanner);
+            
+            // Handle install button click
+            installBanner.querySelector('#installNow').addEventListener('click', async () => {
+                if (deferredPrompt) {
+                    deferredPrompt.prompt();
+                    const { outcome } = await deferredPrompt.userChoice;
+                    console.log(`User response to the install prompt: ${outcome}`);
+                    deferredPrompt = null;
+                }
+                installBanner.remove();
+            });
+            
+            // Handle later button click
+            installBanner.querySelector('#installLater').addEventListener('click', () => {
+                installBanner.remove();
+            });
+            
+            // Auto-hide after 10 seconds
+            setTimeout(() => {
+                if (installBanner.parentNode) {
+                    installBanner.remove();
+                }
+            }, 10000);
+        }
+
+        // Detect if app is running in standalone mode (installed as PWA)
+        function isPWA() {
+            return window.matchMedia('(display-mode: standalone)').matches || 
+                   window.navigator.standalone === true;
+        }
+
+        // Add PWA-specific styles and behaviors
+        if (isPWA()) {
+            document.body.classList.add('pwa-mode');
+            
+            // Add custom CSS for PWA mode
+            const pwaStyles = document.createElement('style');
+            pwaStyles.textContent = `
+                .pwa-mode {
+                    padding-top: env(safe-area-inset-top);
+                    padding-bottom: env(safe-area-inset-bottom);
+                }
+                @media (display-mode: standalone) {
+                    .ad-space {
+                        opacity: 0.7;
+                    }
+                }
+            `;
+            document.head.appendChild(pwaStyles);
+        }
+
+        // Initialize app
+        init();
+    </script>
+</body>
+</html>
