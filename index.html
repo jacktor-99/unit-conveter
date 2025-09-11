@@ -3,29 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unit Converter - Convert Length, Weight, Temperature & More</title>
-    <meta name="description" content="Free online unit converter tool. Convert length, weight, temperature, volume, area, speed, and more. Fast, accurate, and easy to use.">
-    <meta name="keywords" content="unit converter, convert units, length converter, weight converter, temperature converter, metric conversion">
-    <meta name="author" content="Unit Converter Tool">
-    <link rel="canonical" href="https://yourname.github.io/unit-converter">
+    <title>UnitHQ - Unit Converter | Built in Ghana for the Globe 🇬🇭🌍</title>
+    <meta name="description" content="Professional unit converter with live currency rates. Convert length, weight, temperature, volume, area, speed, time, energy & 55+ currencies including all African currencies. Built in Ghana for the Globe.">
+    <meta name="keywords" content="unit converter, currency converter, Ghana cedi, African currencies, convert units, length converter, weight converter, temperature converter, metric conversion, USD to GHS, dollar to cedi, built in ghana">
+    <meta name="author" content="UnitHQ - Built in Ghana for the Globe">
+    <link rel="canonical" href="https://unithq.netlify.app/">
     
-    <!-- PWA Meta Tags -->
+    <!-- Enhanced SEO Meta Tags -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    
+    <!-- PWA Meta Tags with Professional Icons -->
     <meta name="theme-color" content="#5D5CDE">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Unit Converter">
-    <meta name="application-name" content="Unit Converter">
+    <meta name="apple-mobile-web-app-title" content="UnitHQ">
+    <meta name="application-name" content="UnitHQ">
     <meta name="msapplication-TileColor" content="#5D5CDE">
     <meta name="msapplication-tap-highlight" content="no">
     
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIlVuaXQgQ29udmVydGVyIC0gQWZyaWNhbiBDdXJyZW5jeSAmIE1vcmUiLAogICJzaG9ydF9uYW1lIjogIlVuaXQgQ29udmVydGVyIiwKICAiZGVzY3JpcHRpb24iOiAiQ29udmVydCB1bml0cyBhbmQgY3VycmVuY2llcyBpbnN0YW50bHkuIEluY2x1ZGVzIGFsbCBBZnJpY2FuIGN1cnJlbmNpZXMgYW5kIG1vcmUhIiwKICAic3RhcnRfdXJsIjogIi8iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNmOWZhZmIiLAogICJ0aGVtZV9jb2xvciI6ICIjNUQ1Q0RFIiwKICAib3JpZW50YXRpb24iOiAicG9ydHJhaXQtcHJpbWFyeSIsCiAgImljb25zIjogWwogICAgewogICAgICAic3JjIjogImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjNhV1IwYUQwaU1URXlJaUJvWldsbmFIUTlJakV5TWlJZ2RtbGxkMEp2ZUQwaU1DQXdJREV5TWlBeE1qSWlJSGh0Ykc1elBTSm9kSFJ3T2k4dmQzZDNMbmN6TG05eVp5OHlNREF3TDNOMlp5SStQRzl3WVc1NWFYUjVQU0l1TnlJK1BISmxZM1FnZUQwaU1TSWdlVDBpTVNJZ2QybGtkR2c5SWpFeU1DSWdhR1ZwWjJoMFBTSXhNakFpSUhKNFBTSXhNQ0lnWm1sc2JEMGlJelZFTlVORVJTSXZQanhqYVhKamJHVWdZM2c5SWpZeElpQmplVDBpTmpFaUlISXlQU0l5TlNJZ1ptbHNiRDBpSXpWRU5VTkVSU0l2UGp4MGFXMWxjeTVqYjIxd1lXTjBJRzl3WVdOcGRIazlJaTQxSWo0OGRHVjRkQ0I0UFNJME5pSWdlVDBpTmpZaUlHWnBiR3c5SW1kcGJtZGxjaUlnWm05dWRDMXphWHBsUFNJeU5HSWlJR1oxYm1OdGFXOXVQU0psWkM1bFl5ST5PdXM4TDNSbGVIUStQSFJsZUhRZ2VEMGlOallpSUhrOUlqazBJaUJtYVd4c1BTSmNNekF3UXlJZ1ptOXVkQzF6YVhwbFBTSXhPQ0lnWm05dWRDMTNaV2xuYUhRdElHSnZiR1FpUGtwQlNqd3ZkR1Y0ZEQ0OEwzQnZZVzQ0WVM0K1BDOXpkbWMrIiwKICAgICAgInNpemVzIjogIjEyOHgxMjgiLAogICAgICAidHlwZSI6ICJpbWFnZS9zdmcreG1sIgogICAgfSwKICAgIHsKICAgICAgInNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUIzYVdSMGFEMGlORGd4SWlCb1pXbG5hSFE5SWpRNE1TSWdkbWxsZDBKdmVEMGlNQ0F3SURRNE1TQTBPREVpSUhoMGJHNXpQU0pvZEhSd09pOHZkM2QzTG5jekxtOXlaeTh5TURBd0wzTjJaeUkrUEdGd1lXNTViV2x6YVQ0OGNtVmpkQ0I0UFNJeElpQjVQU0l4SWlCM2FXUjBhRDBpTkRnNUlpQm9aV2xuYUhROUlqUTNPU0lnY25nOUlqRXdJaUJtYVd4c1BTSWpOVVExUTBSRklpOCtQQzl6ZG1jKyIsCiAgICAgICJzaXplcyI6ICI0ODF4NDgxIiwKICAgICAgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIKICAgIH0KICBdLAogICJjYXRlZ29yaWVzIjogWyJ1dGlsaXRpZXMiLCAicHJvZHVjdGl2aXR5IiwgInRvb2xzIl0sCiAgImxhbmciOiAiZW4iCn0=">
+    <!-- Enhanced PWA Manifest with Better Icons -->
+    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIlVuaXRIUSAtIFVuaXQgQ29udmVydGVyIHwgQnVpbHQgaW4gR2hhbmEgZm9yIHRoZSBHbG9iZSIsCiAgInNob3J0X25hbWUiOiAiVW5pdEhRIiwKICAiZGVzY3JpcHRpb24iOiAiUHJvZmVzc2lvbmFsIHVuaXQgY29udmVydGVyIHdpdGggbGl2ZSBjdXJyZW5jeSByYXRlcy4gSW5jbHVkZXMgYWxsIEFmcmljYW4gY3VycmVuY2llcy4gQnVpbHQgaW4gR2hhbmEgZm9yIHRoZSBHbG9iZS4iLAogICJzdGFydF91cmwiOiAiLyIsCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsCiAgImJhY2tncm91bmRfY29sb3IiOiAiI2Y5ZmFmYiIsCiAgInRoZW1lX2NvbG9yIjogIiM1RDVDREUiLAogICJvcmllbnRhdGlvbiI6ICJwb3J0cmFpdC1wcmltYXJ5IiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCM2FXUjBhRDBpTVRJNElpQm9aV2xuYUhROUlqRXlPQ0lnZG1sbGQwSnZlRDBpTUNBd0lERXlPQ0F4TWpnaUlIaHRiRzV6UFNKb2RIUndPaTh2ZDNkM0xtY3pMbTl5Wnk4eU1EQXdMM04yWnlJK1BHSmhZMnRuY205MWJtUStQSEpsWTNRZ2VEMGlNQ0lnZVQwaU1DSWdkMmxrZEdnOUlqRXlPQ0lnYUdWcFoyaDBQU0l4TWpnaUlHWnBiR3c5SWlNMVJEVkRSRVVpTDQ4dlltRmphMmR5YjNWdVpENDhZMmx5WTJ4bElHTjRQU0kyTkNJZ1kza3lQU0kyTkNJZ2NqMGlNelFpSUdacGJHdzlJaU0xUkRWRFJFVWlMejQ4ZEdWNGRDQjRQU0kyTkNJZ2VUMGlOelFpSUdacGJHdzlJbWRwYm1kbGNpSWdabTl1ZEMxemFYcGxQU0l5TW1KaUlHWnZiblF0ZDJWcFoyaDBQU0ppYjJ4a0lpQjBaWGgwTFdGdVkyaHZjajFpYldsa1pHeGxJajVWU0R3dmRHVjRkRDQ4TDNOMlp5bytJaXdLSUNBaUlDQWlJaUJpYzJsNlpYTWlPaUFpTVRJNGVERXlPQ0lzQ2lBZ0lpQWdJQ0FpSW5SNWNHVWlPaUFpYVcxaFoyVXZjM1puSzNodGJDSUtJQ0I5TEFvZ0lIc0tJQ0FnSUNBaUlpQnpjbU1pT2lBaVpHRjBZVHBwYldGblpTOXpkbWNyZUcxc08ySmhjMlUyTkN3aWJsdHlaV05oWnpaUGFDUjNTV1JzVGk0M1R6TldORUprUWtOVVVVcDBOVGMwYVVOME1WQkhQUzA4TDJkMElWTnRXWFZFYzNKOWQzZDNMbloyWldNemNFZG1IVFJ3VTNoWWNVZEVZWFp3ZUdSd1pVSlJPVEZPZVc1ME0wRXpSRXhPUVVjellVTmhOWGh6U0dWaGVqZHNUbVExUkVsNlNscHpNVkIzVG5KU2FIRjFOSEp3WVc0dVBEazBNR1psYzJSaWRGRWdVRU10WlVCaFBTOWJhMjlWY0hOWU5IVXdPVU5MWXpGdVNsTnZNRlV2V21Gc1pEWjRZMWxaT1hoNFNYazlJeUErSUNBaUlDQWlJQk5wV2tVNFB5OWJkaUFnSUNBZ0lpQWlZak5hY1V3aU9pQWlNVGt5ZURFNU1pSXNDbUE9IiwKICAgICAgInNpemVzIjogIjEyOHgxMjgiLAogICAgICAidHlwZSI6ICJpbWFnZS9zdmcreG1sIgogICAgfSwKICAgIHsKICAgICAgInNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUIzYVdSMGFEMGlOVEV5SWlCb1pXbG5hSFE5SWpVeE1pSWdkbWxsZDBKdmVEMGlNQ0F3SURRNE1TQTBPREVpSUhoMGJHNXpQU0pvZEhSd09pOHZkM2QzTG5jekxtOXlaeTh5TURBd0wzTjJaeUkrUEdGd1lXNTViV2x6YVQ0OGNtVmpkQ0I0UFNJeElpQjVQU0l4SWlCM2FXUjBhRDBpTkRneElpQm9aV2xuYUhROUlqUTNPU0lnY25nOUlqRXdJaUJtYVd4c1BTSWpOVVExUTBSRklpOCtQQzl6ZG1jKyIsCiAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICAgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIKICAgIH0KICBdLAogICJjYXRlZ29yaWVzIjogWyJ1dGlsaXRpZXMiLCAicHJvZHVjdGl2aXR5IiwgInRvb2xzIiwgImZpbmFuY2UiXSwKICAibGFuZyI6ICJlbiIKfQ==">
     
-    <!-- Open Graph for social sharing -->
-    <meta property="og:title" content="Free Unit Converter Tool">
-    <meta property="og:description" content="Convert between different units of measurement instantly. Length, weight, temperature, volume and more.">
+    <!-- Enhanced Open Graph for Social Sharing -->
+    <meta property="og:title" content="UnitHQ - Professional Unit Converter | Built in Ghana for the Globe">
+    <meta property="og:description" content="Convert units and currencies instantly. Supports all African currencies including Ghana Cedi, Nigerian Naira, CFA Franc and 50+ more. Built in Ghana for the Globe.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unithq.netlify.app/">
+    <meta property="og:site_name" content="UnitHQ">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UnitHQ - Unit Converter | Built in Ghana 🇬🇭">
+    <meta name="twitter:description" content="Professional unit converter with African currency support. Built in Ghana for the Globe.">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "UnitHQ",
+      "description": "Professional unit converter with live currency rates, supporting all African currencies. Built in Ghana for the Globe.",
+      "url": "https://unithq.netlify.app/",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "UnitHQ",
+        "description": "Built in Ghana for the Globe"
+      }
+    }
+    </script>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -43,6 +81,42 @@
     </script>
     
     <style>
+        /* AdSense-optimized ad containers */
+        .adsense-container {
+            min-height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, #f8fafc, #f1f5f9);
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            color: #64748b;
+            font-size: 0.875rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .adsense-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(93, 92, 222, 0.1), transparent);
+            animation: shimmer 2s infinite;
+        }
+        
+        @keyframes shimmer {
+            to { left: 100%; }
+        }
+        
+        .dark .adsense-container {
+            background: linear-gradient(45deg, #1e293b, #334155);
+            border-color: #475569;
+            color: #94a3b8;
+        }
+
         .converter-card {
             transition: all 0.3s ease;
             border: 2px solid transparent;
@@ -58,19 +132,6 @@
         @keyframes highlightResult {
             0% { background-color: #5D5CDE; color: white; }
             100% { background-color: transparent; color: inherit; }
-        }
-        .ad-space {
-            min-height: 90px;
-            border: 2px dashed #e5e7eb;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #9ca3af;
-            font-size: 0.875rem;
-        }
-        .dark .ad-space {
-            border-color: #4b5563;
-            color: #6b7280;
         }
         
         /* Category Animation Styles */
@@ -184,196 +245,619 @@
         .popular-item:hover {
             transform: translateX(5px) scale(1.02);
         }
+
+        /* Navigation styles */
+        .nav-link {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #5D5CDE;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* Page content styles */
+        .page-content {
+            display: none;
+        }
+        
+        .page-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 min-h-screen transition-colors duration-300">
     
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-primary">UnitHQ</h1>
+                    <span class="ml-2 text-sm text-gray-600 dark:text-gray-400">🇬🇭🌍</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary" onclick="showPage('home')">Home</a>
+                    <a href="#" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary" onclick="showPage('about')">About</a>
+                    <a href="#" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary" onclick="showPage('contact')">Contact</a>
+                    <a href="#" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary" onclick="showPage('privacy')">Privacy</a>
+                    <a href="#" class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary" onclick="showPage('terms')">Terms</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 dark:text-gray-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="#" class="block py-2 text-gray-700 dark:text-gray-300" onclick="showPage('home')">Home</a>
+                <a href="#" class="block py-2 text-gray-700 dark:text-gray-300" onclick="showPage('about')">About</a>
+                <a href="#" class="block py-2 text-gray-700 dark:text-gray-300" onclick="showPage('contact')">Contact</a>
+                <a href="#" class="block py-2 text-gray-700 dark:text-gray-300" onclick="showPage('privacy')">Privacy</a>
+                <a href="#" class="block py-2 text-gray-700 dark:text-gray-300" onclick="showPage('terms')">Terms</a>
+            </div>
+        </div>
+    </nav>
+
     <!-- Header Ad Space -->
     <div class="bg-white dark:bg-gray-800 shadow-sm">
-        <div class="container mx-auto px-4 py-2">
-            <div id="frame" style="width: 100%;margin: auto;background: rgba(0, 0, 0, 0.50);position: relative; z-index: 99998;">
-                <iframe data-aa='2409269' src='//acceptable.a-ads.com/2409269/?size=Adaptive'
-        style='border:0; padding:0; width:70%; height:auto; overflow:hidden;display: block;margin: auto'></iframe>
+        <div class="container mx-auto px-4 py-3">
+            <div class="adsense-container" data-ad-slot="header" data-ad-format="horizontal">
+                AdSense - Header Advertisement (728x90)
             </div>
         </div>
     </div>
 
-    <div class="container mx-auto px-4 py-8 max-w-7xl">
-        
-        <!-- Header -->
-        <header class="text-center mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
-                Unit Converter
-            </h1>
-            <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                Convert between different units of measurement instantly. Fast, accurate, and completely free to use.
-            </p>
-        </header>
-
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <!-- Home Page -->
+    <div id="home-page" class="page-content active">
+        <div class="container mx-auto px-4 py-8 max-w-7xl">
             
-            <!-- Main Content -->
-            <div class="lg:col-span-3">
-                
-                <!-- Category Selection -->
-                <div class="category-section bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
-                    <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Select Conversion Category</h2>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                        <button class="category-btn active" data-category="length">
-                            <span class="category-icon">📏</span> Length
-                        </button>
-                        <button class="category-btn" data-category="weight">
-                            <span class="category-icon">⚖️</span> Weight
-                        </button>
-                        <button class="category-btn" data-category="temperature">
-                            <span class="category-icon">🌡️</span> Temperature
-                        </button>
-                        <button class="category-btn" data-category="volume">
-                            <span class="category-icon">🥤</span> Volume
-                        </button>
-                        <button class="category-btn" data-category="area">
-                            <span class="category-icon">📐</span> Area
-                        </button>
-                        <button class="category-btn" data-category="speed">
-                            <span class="category-icon">🚗</span> Speed
-                        </button>
-                        <button class="category-btn" data-category="time">
-                            <span class="category-icon">⏰</span> Time
-                        </button>
-                        <button class="category-btn" data-category="energy">
-                            <span class="category-icon">⚡</span> Energy
-                        </button>
-                        <button class="category-btn" data-category="currency">
-                            <span class="category-icon">💱</span> Currency
-                        </button>
-                    </div>
+            <!-- Header -->
+            <header class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
+                    Professional Unit Converter
+                </h1>
+                <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-4">
+                    Convert between different units of measurement instantly. Supporting all African currencies and more. Fast, accurate, and completely free to use.
+                </p>
+                <div class="inline-flex items-center px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
+                    🇬🇭 Built in Ghana for the Globe 🌍
                 </div>
+            </header>
 
-                <!-- Converter Interface -->
-                <div class="converter-interface bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        
-                        <!-- From Unit -->
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">From:</label>
-                            <select id="fromUnit" class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:border-primary focus:outline-none bg-white dark:bg-gray-700 text-gray-800 dark:text-white mb-3">
-                                <!-- Options populated by JavaScript -->
-                            </select>
-                            <input type="number" id="fromValue" placeholder="Enter value" step="any"
-                                class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:border-primary focus:outline-none bg-white dark:bg-gray-700 text-gray-800 dark:text-white">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                
+                <!-- Main Content -->
+                <div class="lg:col-span-3">
+                    
+                    <!-- Category Selection -->
+                    <div class="category-section bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
+                        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Select Conversion Category</h2>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <button class="category-btn active" data-category="length">
+                                <span class="category-icon">📏</span> Length
+                            </button>
+                            <button class="category-btn" data-category="weight">
+                                <span class="category-icon">⚖️</span> Weight
+                            </button>
+                            <button class="category-btn" data-category="temperature">
+                                <span class="category-icon">🌡️</span> Temperature
+                            </button>
+                            <button class="category-btn" data-category="volume">
+                                <span class="category-icon">🥤</span> Volume
+                            </button>
+                            <button class="category-btn" data-category="area">
+                                <span class="category-icon">📐</span> Area
+                            </button>
+                            <button class="category-btn" data-category="speed">
+                                <span class="category-icon">🚗</span> Speed
+                            </button>
+                            <button class="category-btn" data-category="time">
+                                <span class="category-icon">⏰</span> Time
+                            </button>
+                            <button class="category-btn" data-category="energy">
+                                <span class="category-icon">⚡</span> Energy
+                            </button>
+                            <button class="category-btn" data-category="currency">
+                                <span class="category-icon">💱</span> Currency
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Converter Interface -->
+                    <div class="converter-interface bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            
+                            <!-- From Unit -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">From:</label>
+                                <select id="fromUnit" class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:border-primary focus:outline-none bg-white dark:bg-gray-700 text-gray-800 dark:text-white mb-3">
+                                    <!-- Options populated by JavaScript -->
+                                </select>
+                                <input type="number" id="fromValue" placeholder="Enter value" step="any"
+                                    class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:border-primary focus:outline-none bg-white dark:bg-gray-700 text-gray-800 dark:text-white">
+                            </div>
+
+                            <!-- To Unit -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">To:</label>
+                                <select id="toUnit" class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:border-primary focus:outline-none bg-white dark:bg-gray-700 text-gray-800 dark:text-white mb-3">
+                                    <!-- Options populated by JavaScript -->
+                                </select>
+                                <div id="result" class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-600 text-gray-800 dark:text-white font-semibold">
+                                    Result will appear here
+                                </div>
+                            </div>
                         </div>
 
-                        <!-- To Unit -->
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">To:</label>
-                            <select id="toUnit" class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:border-primary focus:outline-none bg-white dark:bg-gray-700 text-gray-800 dark:text-white mb-3">
-                                <!-- Options populated by JavaScript -->
-                            </select>
-                            <div id="result" class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-600 text-gray-800 dark:text-white font-semibold">
-                                Result will appear here
+                        <!-- Currency Status & Quick Convert Buttons -->
+                        <div class="mt-6">
+                            <div class="flex justify-between items-center mb-3">
+                                <h3 class="text-sm font-medium text-gray-700 dark:text-gray-300">Quick Convert:</h3>
+                                <div id="currencyStatus" class="hidden text-xs text-gray-500 dark:text-gray-400">
+                                    <span id="lastUpdated"></span>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-2" id="quickButtons">
+                                <!-- Populated by JavaScript -->
                             </div>
                         </div>
                     </div>
 
-                    <!-- Currency Status & Quick Convert Buttons -->
-                    <div class="mt-6">
-                        <div class="flex justify-between items-center mb-3">
-                            <h3 class="text-sm font-medium text-gray-700 dark:text-gray-300">Quick Convert:</h3>
-                            <div id="currencyStatus" class="hidden text-xs text-gray-500 dark:text-gray-400">
-                                <span id="lastUpdated"></span>
-                            </div>
+                    <!-- Content Ad Space -->
+                    <div class="mb-8">
+                        <div class="adsense-container" data-ad-slot="content" data-ad-format="horizontal">
+                            AdSense - Content Advertisement (728x90)
                         </div>
-                        <div class="flex flex-wrap gap-2" id="quickButtons">
+                    </div>
+
+                    <!-- Popular Conversions -->
+                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
+                        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Popular Conversions</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="popularConversions">
                             <!-- Populated by JavaScript -->
                         </div>
                     </div>
-                </div>
 
-                <!-- Ad Space Between Content -->
-                <div id="frame" style="width: 100%;margin: auto;background: rgba(0, 0, 0, 0.50);position: relative; z-index: 99998;">
-                    <div class="ad-space rounded-lg">
-                        <iframe data-aa='2409383' src='//acceptable.a-ads.com/2409383/?size=Adaptive'
-                            style='border:0; padding:0; width:70%; height:auto; overflow:hidden;display: block;margin: auto'></iframe>
+                    <!-- Features Section -->
+                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+                        <h2 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Why Choose UnitHQ?</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-4">
+                                <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-2">🌍 African Focus</h3>
+                                <ul class="text-gray-600 dark:text-gray-400 space-y-2">
+                                    <li>• Complete support for all African currencies</li>
+                                    <li>• Ghana Cedi, Nigerian Naira, CFA Franc & more</li>
+                                    <li>• Real-time exchange rates</li>
+                                    <li>• Built by Africans for the world</li>
+                                </ul>
+                            </div>
+                            <div class="space-y-4">
+                                <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-2">⚡ Professional Features</h3>
+                                <ul class="text-gray-600 dark:text-gray-400 space-y-2">
+                                    <li>• Instant conversion results</li>
+                                    <li>• Mobile-first responsive design</li>
+                                    <li>• Offline PWA capabilities</li>
+                                    <li>• No registration required</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Popular Conversions -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 mb-8">
-                    <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Popular Conversions</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="popularConversions">
-                        <!-- Populated by JavaScript -->
+                <!-- Sidebar -->
+                <div class="lg:col-span-1">
+                    
+                    <!-- Sidebar Ad -->
+                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 mb-6">
+                        <div class="adsense-container min-h-[600px]" data-ad-slot="sidebar" data-ad-format="vertical">
+                            AdSense<br>Sidebar Advertisement<br>(300x600)
+                        </div>
                     </div>
-                </div>
 
-                <!-- SEO Content -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-                    <h2 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">About Our Unit Converter</h2>
-                    <div class="prose dark:prose-invert max-w-none">
-                        <p class="text-gray-600 dark:text-gray-400 mb-4">
-                            Our free online unit converter makes it easy to convert between different units of measurement. Whether you need to convert length, weight, temperature, volume, area, speed, time, energy units, or live currency exchange rates, our tool provides instant and accurate results.
-                        </p>
-                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-2">Features:</h3>
-                        <ul class="text-gray-600 dark:text-gray-400 mb-4">
-                            <li>• Instant conversion results as you type</li>
-                            <li>• Support for metric and imperial units</li>
-                            <li>• Mobile-friendly responsive design</li>
-                            <li>• No registration required</li>
-                            <li>• Completely free to use</li>
-                        </ul>
-                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-2">Supported Categories:</h3>
-                        <p class="text-gray-600 dark:text-gray-400">
-                            Length (meters, feet, inches), Weight (kilograms, pounds, ounces), Temperature (Celsius, Fahrenheit, Kelvin), Volume (liters, gallons, cups), Area (square meters, acres, hectares), Speed (mph, km/h, m/s), Time (seconds, minutes, hours), Energy (joules, calories, BTU), and live Currency exchange rates (USD, EUR, GBP, JPY and 16 more currencies).
-                        </p>
+                    <!-- Conversion History -->
+                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 mb-6">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4">Recent Conversions</h3>
+                        <div id="conversionHistory" class="space-y-2">
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">No conversions yet</p>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- Sidebar -->
-            <div class="lg:col-span-1">
-                
-                <!-- Sidebar Ad -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 mb-6">
-                    <div class="ad-space rounded min-h-[600px]">
-                        Sidebar Advertisement<br>Space (300x600)
-                    </div>
-                </div>
-
-                <!-- Conversion History -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 mb-6">
-                    <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4">Recent Conversions</h3>
-                    <div id="conversionHistory" class="space-y-2">
-                        <p class="text-gray-500 dark:text-gray-400 text-sm">No conversions yet</p>
-                    </div>
-                </div>
-
-                <!-- Quick Reference -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
-                    <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4">Quick Reference</h3>
-                    <div class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-                        <div>1 meter = 3.28084 feet</div>
-                        <div>1 kilogram = 2.20462 pounds</div>
-                        <div>0°C = 32°F = 273.15K</div>
-                        <div>1 liter = 0.264172 gallons</div>
-                        <div>1 mile = 1.60934 kilometers</div>
+                    <!-- Quick Reference -->
+                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-white mb-4">Quick Reference</h3>
+                        <div class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                            <div>1 USD = ~16 GHS (Ghana Cedi)</div>
+                            <div>1 meter = 3.28084 feet</div>
+                            <div>1 kilogram = 2.20462 pounds</div>
+                            <div>0°C = 32°F = 273.15K</div>
+                            <div>1 liter = 0.264172 gallons</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Footer Ad -->
-    <footer class="bg-white dark:bg-gray-800 mt-12 py-6">
-        <div class="container mx-auto px-4">
-            <div class="ad-space rounded mb-4">
-                Footer Advertisement Space (728x90)
+    <!-- About Page -->
+    <div id="about-page" class="page-content">
+        <div class="container mx-auto px-4 py-8 max-w-4xl">
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-white mb-6">About UnitHQ</h1>
+                
+                <div class="prose dark:prose-invert max-w-none">
+                    <div class="bg-primary/10 border-l-4 border-primary p-6 mb-6 rounded-r-lg">
+                        <h2 class="text-xl font-semibold text-primary mb-2">🇬🇭 Built in Ghana for the Globe 🌍</h2>
+                        <p class="text-gray-700 dark:text-gray-300">
+                            UnitHQ was created to address a gap we noticed: most conversion tools poorly support African currencies or lack them entirely. As developers based in Ghana, we built a solution that serves both our local community and users worldwide.
+                        </p>
+                    </div>
+
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Our Mission</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">
+                        To provide the most comprehensive and user-friendly unit conversion tool, with special focus on currencies and measurements important to African businesses, students, and professionals while serving users globally.
+                    </p>
+
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">What Makes Us Different</h3>
+                    <ul class="text-gray-600 dark:text-gray-400 mb-6 space-y-2">
+                        <li>• <strong>Complete African Currency Support:</strong> All 54+ African currencies with real-time rates</li>
+                        <li>• <strong>Mobile-First Design:</strong> Built for Africa's mobile-heavy internet usage</li>
+                        <li>• <strong>Offline Capability:</strong> PWA technology works without constant internet</li>
+                        <li>• <strong>Local Expertise:</strong> Built by people who understand local needs</li>
+                        <li>• <strong>Global Standards:</strong> Professional quality that competes worldwide</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Technical Excellence</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">
+                        UnitHQ is built using modern web technologies including Progressive Web App (PWA) capabilities, real-time API integration for currency rates, and responsive design principles. The application can be installed on any device and works seamlessly across all platforms.
+                    </p>
+
+                    <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
+                        <h4 class="font-semibold text-gray-800 dark:text-white mb-2">Supported Categories:</h4>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm">
+                            Length, Weight, Temperature, Volume, Area, Speed, Time, Energy, and Currency conversions with support for over 55 currencies including comprehensive African currency coverage.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="text-center text-gray-600 dark:text-gray-400 text-sm">
-                © 2024 Unit Converter Tool. Free online unit conversion calculator.
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact-page" class="page-content">
+        <div class="container mx-auto px-4 py-8 max-w-4xl">
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-white mb-6">Contact Us</h1>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Get in Touch</h2>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6">
+                            We'd love to hear from you! Whether you have questions, suggestions, or need support, feel free to reach out.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-800 dark:text-white">Email</p>
+                                    <p class="text-gray-600 dark:text-gray-400">unithq.contact@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-800 dark:text-white">Location</p>
+                                    <p class="text-gray-600 dark:text-gray-400">Ghana 🇬🇭</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-800 dark:text-white">Response Time</p>
+                                    <p class="text-gray-600 dark:text-gray-400">Usually within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <form class="space-y-4" onsubmit="handleContactForm(event)">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Name</label>
+                                <input type="text" required class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:border-primary focus:outline-none bg-white dark:bg-gray-700 text-gray-800 dark:text-white">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email</label>
+                                <input type="email" required class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:border-primary focus:outline-none bg-white dark:bg-gray-700 text-gray-800 dark:text-white">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Subject</label>
+                                <input type="text" required class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:border-primary focus:outline-none bg-white dark:bg-gray-700 text-gray-800 dark:text-white">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message</label>
+                                <textarea required rows="4" class="w-full px-4 py-3 text-base border border-gray-300 dark:border-gray-600 rounded-lg focus:border-primary focus:outline-none bg-white dark:bg-gray-700 text-gray-800 dark:text-white"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Page -->
+    <div id="privacy-page" class="page-content">
+        <div class="container mx-auto px-4 py-8 max-w-4xl">
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-white mb-6">Privacy Policy</h1>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">Last updated: December 2024</p>
+                
+                <div class="prose dark:prose-invert max-w-none space-y-6">
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-3">Information We Collect</h2>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            UnitHQ is designed to protect your privacy. We collect minimal information necessary to provide our service:
+                        </p>
+                        <ul class="text-gray-600 dark:text-gray-400 list-disc list-inside space-y-1">
+                            <li>Usage data for improving our service (anonymous)</li>
+                            <li>Technical information for app functionality</li>
+                            <li>Contact information only when you reach out to us</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-3">How We Use Information</h2>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            We use collected information to:
+                        </p>
+                        <ul class="text-gray-600 dark:text-gray-400 list-disc list-inside space-y-1">
+                            <li>Provide and maintain our conversion service</li>
+                            <li>Improve user experience and app functionality</li>
+                            <li>Respond to user inquiries and support requests</li>
+                            <li>Ensure technical functionality and security</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-3">Data Storage</h2>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            Your conversion history is stored locally on your device only. We do not store your personal conversion data on our servers. Currency exchange rates are fetched from third-party APIs and are not stored with personal identifiers.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-3">Cookies and Local Storage</h2>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            We use local storage to save your preferences and recent conversions on your device. This improves your user experience by remembering your settings. You can clear this data at any time through your browser settings.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-3">Third-Party Services</h2>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            We use third-party services for:
+                        </p>
+                        <ul class="text-gray-600 dark:text-gray-400 list-disc list-inside space-y-1">
+                            <li>Currency exchange rate data (ExchangeRate-API)</li>
+                            <li>Website analytics (Google Analytics)</li>
+                            <li>Advertising services (Google AdSense)</li>
+                        </ul>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            These services have their own privacy policies which we encourage you to review.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-3">Your Rights</h2>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            You have the right to:
+                        </p>
+                        <ul class="text-gray-600 dark:text-gray-400 list-disc list-inside space-y-1">
+                            <li>Access information about how your data is used</li>
+                            <li>Request deletion of any personal data we may have</li>
+                            <li>Opt out of analytics tracking</li>
+                            <li>Contact us with privacy concerns</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-3">Contact Us</h2>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            If you have questions about this Privacy Policy, please contact us at: <strong>unithq.contact@gmail.com</strong>
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms of Service Page -->
+    <div id="terms-page" class="page-content">
+        <div class="container mx-auto px-4 py-8 max-w-4xl">
+            <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-white mb-6">Terms of Service</h1>
+                <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">Last updated: December 2024</p>
+                
+                <div class="prose dark:prose-invert max-w-none space-y-6">
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-3">Acceptance of Terms</h2>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            By accessing and using UnitHQ, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-3">Use License</h2>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            Permission is granted to use UnitHQ for personal and commercial conversion needs. This license shall automatically terminate if you violate any of these restrictions and may be terminated by us at any time.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-3">Service Availability</h2>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            We strive to provide accurate and reliable conversion services. However, we do not guarantee:
+                        </p>
+                        <ul class="text-gray-600 dark:text-gray-400 list-disc list-inside space-y-1">
+                            <li>100% uptime or uninterrupted service</li>
+                            <li>Complete accuracy of all conversion rates</li>
+                            <li>Availability of all features at all times</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-3">Accuracy Disclaimer</h2>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            While we strive for accuracy, conversion rates and calculations are provided for informational purposes only. For critical financial decisions, please verify rates with official sources. Currency rates are sourced from third-party APIs and may not reflect real-time market conditions.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-3">Prohibited Uses</h2>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            You may not use UnitHQ:
+                        </p>
+                        <ul class="text-gray-600 dark:text-gray-400 list-disc list-inside space-y-1">
+                            <li>For any unlawful purpose or to solicit others to perform unlawful acts</li>
+                            <li>To violate any international, federal, provincial, or state regulations, rules, laws, or local ordinances</li>
+                            <li>To transmit, or procure the sending of, any advertising or promotional material without our prior written consent</li>
+                            <li>To attempt to gain unauthorized access to our systems</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-3">Limitation of Liability</h2>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            In no event shall UnitHQ or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use UnitHQ, even if we have been notified orally or in writing of the possibility of such damage.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-3">Modifications</h2>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            We may revise these terms of service at any time without notice. By using UnitHQ, you are agreeing to be bound by the then current version of these terms of service.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-3">Contact Information</h2>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            Questions about the Terms of Service should be sent to us at: <strong>unithq.contact@gmail.com</strong>
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-800 mt-12 py-8 border-t border-gray-200 dark:border-gray-700">
+        <div class="container mx-auto px-4">
+            <!-- Footer Ad -->
+            <div class="mb-6">
+                <div class="adsense-container" data-ad-slot="footer" data-ad-format="horizontal">
+                    AdSense - Footer Advertisement (728x90)
+                </div>
+            </div>
+            
+            <div class="text-center space-y-4">
+                <div class="flex justify-center items-center space-x-2">
+                    <span class="text-primary font-bold text-xl">UnitHQ</span>
+                    <span class="text-gray-600 dark:text-gray-400">🇬🇭 Built in Ghana for the Globe 🌍</span>
+                </div>
+                <div class="text-gray-600 dark:text-gray-400 text-sm">
+                    © 2024 UnitHQ. Professional unit conversion tool. Free online calculator.
+                </div>
+                <div class="flex justify-center space-x-6 text-sm">
+                    <a href="#" onclick="showPage('privacy')" class="text-gray-600 dark:text-gray-400 hover:text-primary">Privacy</a>
+                    <a href="#" onclick="showPage('terms')" class="text-gray-600 dark:text-gray-400 hover:text-primary">Terms</a>
+                    <a href="#" onclick="showPage('contact')" class="text-gray-600 dark:text-gray-400 hover:text-primary">Contact</a>
+                    <a href="#" onclick="showPage('about')" class="text-gray-600 dark:text-gray-400 hover:text-primary">About</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script>
+        // Navigation and page management
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page-content').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show selected page
+            document.getElementById(pageId + '-page').classList.add('active');
+            
+            // Update URL without reload
+            history.pushState(null, null, pageId === 'home' ? '/' : `#${pageId}`);
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', () => {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Contact form handler
+        function handleContactForm(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Create mailto link
+            const subject = encodeURIComponent(data.subject || 'UnitHQ Contact');
+            const body = encodeURIComponent(`Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`);
+            const mailtoLink = `mailto:unithq.contact@gmail.com?subject=${subject}&body=${body}`;
+            
+            window.location.href = mailtoLink;
+        }
+
         // Dark mode detection
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             document.documentElement.classList.add('dark');
@@ -391,7 +875,7 @@
         let lastUpdateTime = null;
         const CACHE_DURATION = 1000 * 60 * 60; // 1 hour cache
 
-        // Conversion data
+        // Conversion data (same as before)
         const conversions = {
             length: {
                 name: 'Length',
@@ -903,10 +1387,10 @@
                     // Register service worker
                     const registration = await navigator.serviceWorker.register(
                         'data:text/javascript;base64,' + btoa(`
-                            const CACHE_NAME = 'unit-converter-v1';
+                            const CACHE_NAME = 'unithq-v1';
                             const urlsToCache = [
                                 '/',
-                                'https://cdn.tailwindcss.com/3.3.0'
+                                'https://cdn.tailwindcss.com'
                             ];
 
                             self.addEventListener('install', event => {
@@ -959,12 +1443,12 @@
             
             // Create custom install prompt
             const installBanner = document.createElement('div');
-            installBanner.className = 'fixed bottom-4 left-4 right-4 bg-primary text-white p-4 rounded-lg shadow-lg z-50 flex items-center justify-between';
+            installBanner.className = 'fixed bottom-4 left-4 right-4 bg-primary text-white p-4 rounded-lg shadow-lg z-50 flex items-center justify-between max-w-md mx-auto';
             installBanner.innerHTML = `
                 <div class="flex items-center">
                     <div class="text-2xl mr-3">📱</div>
                     <div>
-                        <div class="font-semibold">Install Unit Converter</div>
+                        <div class="font-semibold">Install UnitHQ</div>
                         <div class="text-sm opacity-90">Add to your home screen for quick access</div>
                     </div>
                 </div>
@@ -1018,16 +1502,33 @@
                     padding-bottom: env(safe-area-inset-bottom);
                 }
                 @media (display-mode: standalone) {
-                    .ad-space {
-                        opacity: 0.7;
+                    .adsense-container {
+                        opacity: 0.8;
                     }
                 }
             `;
             document.head.appendChild(pwaStyles);
         }
 
-        // Initialize app
-        init();
+        // Initialize app when on home page
+        if (document.getElementById('home-page').classList.contains('active')) {
+            init();
+        }
+
+        // Handle browser back/forward
+        window.addEventListener('popstate', () => {
+            const hash = window.location.hash.replace('#', '');
+            const page = hash || 'home';
+            showPage(page);
+        });
+
+        // Load correct page on initial load
+        document.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash && hash !== 'home') {
+                showPage(hash);
+            }
+        });
     </script>
 </body>
 </html>
